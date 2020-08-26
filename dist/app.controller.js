@@ -11,6 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AppController = void 0;
 const common_1 = require("@nestjs/common");
+const swagger_1 = require("@nestjs/swagger");
 let AppController = class AppController {
     index() {
         return 'index';
@@ -23,7 +24,8 @@ __decorate([
     __metadata("design:returntype", String)
 ], AppController.prototype, "index", null);
 AppController = __decorate([
-    common_1.Controller()
+    common_1.Controller(),
+    swagger_1.ApiTags('默认')
 ], AppController);
 exports.AppController = AppController;
 //# sourceMappingURL=app.controller.js.map

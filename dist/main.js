@@ -6,8 +6,8 @@ const swagger_1 = require("@nestjs/swagger");
 async function bootstrap() {
     const app = await core_1.NestFactory.create(app_module_1.AppModule);
     const options = new swagger_1.DocumentBuilder()
-        .setTitle('nest博客api')
-        .setDescription('cjw博客')
+        .setTitle('cjw博客api')
+        .setDescription('cjw1博客')
         .setVersion('1.0')
         .build();
     const document = swagger_1.SwaggerModule.createDocument(app, options);
